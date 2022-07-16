@@ -2,7 +2,7 @@ import boto3
 from botocore.exceptions import ClientError
 import datetime
 #from datetime import datetime, timedelta
-from datetime import timedelta
+#from datetime import timedelta
  
  
 
@@ -39,8 +39,9 @@ def Fetch_url(last_modified_timestamp):
 #x = datetime.datetime.now()
 #print(x)
 #print(Fetch_url(x)) 
-newTime = datetime.datetime.now() - datetime.timedelta(days=2)
-#vTime = datetime.datetime.now() - datetime.timedelta(minutes=2)
+newTime = datetime.datetime.utcnow() - datetime.timedelta(days=2)
+#newTime = datetime.datetime.utcnow() - datetime.timedelta(minutes=2)
+
 
 print(Fetch_url(newTime))
 #print(Fetch_url("2022-07-01 12:19:56.986445+00:00")) 
