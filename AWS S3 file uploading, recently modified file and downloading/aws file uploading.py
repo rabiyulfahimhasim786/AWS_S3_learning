@@ -10,10 +10,10 @@ import random
 ACCESS_KEY = "ACCESS_KEY"
 SECRET_KEY = "SECRET_KEY"
 #REGION_NAME = "your bucket's region name"
-#BUCKET_NAME = "tesxtractkvtable-us-east-1-660866612853"
-#prefix = 'async-kv-table/'
-BUCKET_NAME = "bucket_naem"
-#prefix = 'json/'
+#BUCKET_NAME = "bucket_name"
+#prefix = 'foldername/'
+BUCKET_NAME = "bucket_name"
+#prefix = 'foldername/'
 ses = Session(aws_access_key_id=ACCESS_KEY,
               aws_secret_access_key=SECRET_KEY)
               #region_name=REGION_NAME)
